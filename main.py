@@ -5,7 +5,7 @@ import geopy.distance
 import openai
 
 DATABASE = 'db/shield.db'
-openai.api_key = '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'
+openai.api_key = 'x'
 
 app = Flask(__name__)
 
