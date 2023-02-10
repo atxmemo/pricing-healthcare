@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="../static/css/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>{{description_en}}
+    <br />
+    <a href="{{procedure_url}}">More Information</a>
+  </p>
+  <br />
+  <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Hospital</th>
+            <th>Gross Charge</th>
+            <th>Cash Charge</th>
+            <th>Cash Discount Percentage</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in data %}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.gross_charge}}</td>
+            <td>{{item.cash_charge}}</td>
+            <td>{{item.percent_off}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</body>
+
+</html>
